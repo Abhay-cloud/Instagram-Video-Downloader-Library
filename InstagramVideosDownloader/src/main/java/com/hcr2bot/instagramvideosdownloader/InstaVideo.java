@@ -17,7 +17,7 @@ import org.json.JSONObject;
 
 public class InstaVideo {
 
-    public static void getVideoLink(Context context, String postUrl) {
+    public static void downloadVideo(Context context, String postUrl) {
 
         String replacedUrl;
         final String[] finalVideoUrl = new String[1];
