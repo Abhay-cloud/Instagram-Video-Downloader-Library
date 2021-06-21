@@ -1,0 +1,3 @@
+rootProject.name = "Instagram Videos Downloader Library"
+include ':app'
+include ':InstagramVideosDownloader'
