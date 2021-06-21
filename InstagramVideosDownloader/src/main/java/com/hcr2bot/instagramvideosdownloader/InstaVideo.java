@@ -17,7 +17,7 @@ import org.json.JSONObject;
 
 public class InstaVideo {
 
-    public static String getVideoLink(Context context, String postUrl) {
+    public static void getVideoLink(Context context, String postUrl) {
 
         String replacedUrl;
         final String[] finalVideoUrl = new String[1];
@@ -67,6 +67,7 @@ public class InstaVideo {
                         e.printStackTrace();
                     }
                     Log.d("finalURL", finalVideoUrl[0]);
+                    Util.download(finalVideoUrl[0], Util.RootDirectoryInstagram, context, System.currentTimeMillis() + ".mp4");
 
 
                 }
@@ -84,7 +85,6 @@ public class InstaVideo {
 
         }
 
-        return finalVideoUrl[0];
 
     }
 }
