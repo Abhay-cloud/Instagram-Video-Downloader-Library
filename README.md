@@ -3,7 +3,7 @@
 
 An easy to use library for directly download videos from ig reels, igtv.
 
-
+[![JitPack](https://jitpack.io/v/Abhay-cloud/Instagram-Video-Downloader-Library.svg)](https://jitpack.io/#Abhay-cloud/Instagram-Video-Downloader-Library)
 
 
 ## Implementation
