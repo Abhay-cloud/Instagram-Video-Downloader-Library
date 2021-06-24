@@ -34,11 +34,11 @@ public class InstaVideo {
             } else if (postUrl.contains("?utm_source=ig_web_button_share_sheet")) {
                 String partToRemove = "?utm_source=ig_web_button_share_sheet";
                 replacedUrl = postUrl.replace(partToRemove, "");
-            } else if (postUrl.contains("?utm_source=share_sheet")) {
-                String partToRemove = "?utm_source=share_sheet";
+            } else if (postUrl.contains("?utm_medium=share_sheet")) {
+                String partToRemove = "?utm_medium=share_sheet";
                 replacedUrl = postUrl.replace(partToRemove, "");
-            } else if (postUrl.contains("?utm_source=copy_link")) {
-                String partToRemove = "?utm_source=copy_link";
+            } else if (postUrl.contains("?utm_medium=copy_link")) {
+                String partToRemove = "?utm_medium=copy_link";
                 replacedUrl = postUrl.replace(partToRemove, "");
             } else {
                 replacedUrl = postUrl;
