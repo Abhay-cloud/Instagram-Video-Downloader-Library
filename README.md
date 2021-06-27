@@ -25,7 +25,7 @@ Step 2. Add the dependency
 
 ```bash
 dependencies {
-	        implementation 'com.github.Abhay-cloud:Instagram-Video-Downloader-Library:0.2.0'
+	        implementation 'com.github.Abhay-cloud:Instagram-Video-Downloader-Library:0.2.2'
 	}
 ```
     
