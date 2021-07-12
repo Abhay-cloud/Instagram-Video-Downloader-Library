@@ -71,4 +71,9 @@ If you have any difficulty then just message me on Instagram or Telegram.
 
 [![](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/abhaycloud)
 
+
+## LICENSE
+Project is published under the Apache 2.0 license. Feel free to clone and modify repository as you want, but don't forget to add reference to authors.
+
+
 ### Made with ❤️ by Abhay
