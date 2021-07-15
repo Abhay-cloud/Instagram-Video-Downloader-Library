@@ -25,7 +25,7 @@ Step 2. Add the dependency
 
 ```bash
 dependencies {
-	        implementation 'com.github.Abhay-cloud:Instagram-Video-Downloader-Library:0.2.2'
+	        implementation 'com.github.Abhay-cloud:Instagram-Video-Downloader-Library:0.2.3'
 	}
 ```
     
@@ -55,6 +55,10 @@ if (Build.VERSION.SDK_INT >= 23) {
 ## Usage
 ```java
 InstaVideo.downloadVideo(Context, Reels/IGTV video url);
+```
+If you want to make your directory then use:
+```java
+InstaVideo.downloadVideo(Context, Reels/IGTV video url, your directory name); // it'll create new folder in gallery with provided directory name.
 ```
 
 You are free to contribute here. I'll add more awesome updates in near future.
