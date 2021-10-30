@@ -6,6 +6,16 @@ An easy to use library for directly download videos from ig reels, igtv.
 [![JitPack](https://jitpack.io/v/Abhay-cloud/Instagram-Video-Downloader-Library.svg)](https://jitpack.io/#Abhay-cloud/Instagram-Video-Downloader-Library)
 
 
+## Prerequisite
+
+Add this library to build.gradle (app level)
+
+```bash
+dependencies {
+    implementation 'com.android.volley:volley:1.2.1'
+	}
+```
+
 ## Implementation
 
 Step 1. Add the JitPack repository to your build file.
