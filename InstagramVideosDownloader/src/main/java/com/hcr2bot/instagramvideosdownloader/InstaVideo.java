@@ -28,24 +28,10 @@ public class InstaVideo {
         if (TextUtils.isEmpty(postUrl)) {
             Log.e("VideoURLErrors", "Provided String is empty.");
         } else {
-            if (postUrl.contains("?utm_source=ig_web_copy_link")) {
-                String partToRemove = "?utm_source=ig_web_copy_link";
-                replacedUrl = postUrl.replace(partToRemove, "");
-            } else if (postUrl.contains("?utm_source=ig_web_button_share_sheet")) {
-                String partToRemove = "?utm_source=ig_web_button_share_sheet";
-                replacedUrl = postUrl.replace(partToRemove, "");
-            } else if (postUrl.contains("?utm_medium=share_sheet")) {
-                String partToRemove = "?utm_medium=share_sheet";
-                replacedUrl = postUrl.replace(partToRemove, "");
-            } else if (postUrl.contains("?utm_medium=copy_link")) {
-                String partToRemove = "?utm_medium=copy_link";
-                replacedUrl = postUrl.replace(partToRemove, "");
-            } else {
-                replacedUrl = postUrl;
-            }
+            replacedUrl=postUrl.split("\\?")[0]+"?__a=1&__d=dis";
 
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,
-                    replacedUrl + "?__a=1", null, new Response.Listener<JSONObject>() {
+                    replacedUrl, null, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
 
@@ -99,24 +85,10 @@ public class InstaVideo {
         if (TextUtils.isEmpty(postUrl)) {
             Log.e("VideoURLErrors", "Provided String is empty.");
         } else {
-            if (postUrl.contains("?utm_source=ig_web_copy_link")) {
-                String partToRemove = "?utm_source=ig_web_copy_link";
-                replacedUrl = postUrl.replace(partToRemove, "");
-            } else if (postUrl.contains("?utm_source=ig_web_button_share_sheet")) {
-                String partToRemove = "?utm_source=ig_web_button_share_sheet";
-                replacedUrl = postUrl.replace(partToRemove, "");
-            } else if (postUrl.contains("?utm_medium=share_sheet")) {
-                String partToRemove = "?utm_medium=share_sheet";
-                replacedUrl = postUrl.replace(partToRemove, "");
-            } else if (postUrl.contains("?utm_medium=copy_link")) {
-                String partToRemove = "?utm_medium=copy_link";
-                replacedUrl = postUrl.replace(partToRemove, "");
-            } else {
-                replacedUrl = postUrl;
-            }
+            replacedUrl=postUrl.split("\\?")[0]+"?__a=1&__d=dis";
 
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,
-                    replacedUrl + "?__a=1", null, new Response.Listener<JSONObject>() {
+                    replacedUrl, null, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
 
